@@ -1,0 +1,220 @@
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+body{
+    background:rgba(0,0,0,0.7);
+    background-size: cover;
+    background-blend-mode: darken;
+}
+.nav{
+    border-top:1px solid rgb(23, 23, 59) ;
+    background: rgba(255, 255, 255, 0.1);
+	backdrop-filter: blur(10px);
+    position: fixed;
+    width: 100%;
+    height: auto;
+    z-index: 100;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.nav h1{
+    font-size: 2rem;
+    font-family: monospace;
+    margin: 0 0 0 1rem;
+    color: white;
+    padding: 20px 10px;
+    border-radius: 50%;
+}
+
+.nav ul{
+    display: flex;
+    align-items: center;
+    font-size: 1.2rem;
+    font-weight: 500;
+    list-style: none;
+   
+}
+
+.nav li{
+    margin: 2rem 1rem;
+    
+}
+a{
+    text-decoration: none;
+    color: rgb(23, 23, 59);
+    color: white;
+}
+
+.main{
+    background:rgba(0,0,0,0.7)  url(images/blackback.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 75vh;
+    animation: slide 40s infinite;
+}
+
+@keyframes slide{
+    25%{
+        background:rgba(0,0,0,0.7)  url(images/alex-robinson-US4GkOZ5kWQ-unsplash.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    50%{
+        background:rgba(0,0,0,0.7)  url(images/kim-carpenter-IHIgnhLvz5Q-unsplash.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    75%{
+        background:rgba(0,0,0,0.7)  url(images/clem-onojeghuo-FbTOrJ2G8KI-unsplash.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+    100%{
+        background:rgba(0,0,0,0.7)  url(images/blackfeeling.jpg);
+        background-size: cover;
+        background-blend-mode: darken;
+    }
+}
+
+.main-sub{
+    background:rgba(0,0,0,0.7)  url(images/scott-graham-5fNmWej4tAA-unsplash.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    width: 100%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.min{
+    background: rgb(141, 78, 7);
+    margin: 0 1rem;
+    width: 95%;
+    height: 95%;
+}
+
+#about{
+    background:rgba(0,0,0,0.7)  url(images/morhycomputer.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+#services{
+    background:rgba(0,0,0,0.7)  url(images/congested.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+#contact{
+    background:rgba(0,0,0,0.7)  url(images/blackback.jpg);
+    background-size: cover;
+    background-blend-mode: darken;
+    background-attachment: fixed;
+    width: 100%;
+    height: 50vh;
+}
+
+.notes{
+    background:rgba(0,0,0,0.7)  white;
+    background-size: cover;
+    background-blend-mode: darken;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 50vh;
+    padding: 2rem;
+    color: rgb(22, 21, 21);
+}
+
+.notes h2{
+    margin: 0 0 1rem 0;
+    color: black;
+}
+
+.notes p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin: 0 0 0.5rem 0;
+}
+
+.footer{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer .footer-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    height: 40vh;
+}
+
+.footer .footer-nav ul{
+    list-style: none;
+}
+
+.footer .footer-nav ul h3 {
+    color:rgb(14, 14, 77) ;
+}
+
+.footer form{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer form input{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer form textarea{
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: none;
+}
+
+.footer form button{
+    color: white;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    background:rgb(14, 14, 77) ;
+}
+
+.footer form button:hover{
+    background:rgb(51, 27, 75) ;
+}
+
+
+
+@media (max-width:768px){
+    .bs{
+        display: none;
+    }
+
+    .nav ul{
+        display:none;
+    }
+}
